@@ -13,8 +13,9 @@ venv/
 .env
 .DS_Store
 *.log
-logs/*.txt
+logs/
 .vscode/
 *.swp
 *.swo
 *~
+push.bat
