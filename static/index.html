@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Launcher V2 - Gerenciador de Apps</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Launcher V2</h1>
+        <p>Gerencie seus aplicativos com segurança e facilidade</p>
+        
+        <!-- Botão para abrir modal de adicionar app -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <button class="btn-add-app" onclick="abrirModalAdicionar()">
+                ➕ Adicionar App
+            </button>
+        </div>
+        
+        <!-- Apps Grid -->
+        <div id="apps-container" class="apps-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Carregando apps...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para adicionar app -->
+    <div id="modal-adicionar" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>➕ Adicionar Novo App</h2>
+                <button class="btn-close-modal" onclick="fecharModalAdicionar()">✕</button>
+            </div>
+            
+            <form id="form-adicionar" onsubmit="enviarFormulario(event)">
+                <div class="form-group">
+                    <label for="app-id">ID do App:</label>
+                    <input type="text" id="app-id" placeholder="spotify" required>
+                    <small>Apenas letras, números, -, _</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="app-nome">Nome do App:</label>
+                    <input type="text" id="app-nome" placeholder="Spotify" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="app-caminho">Caminho do Executavel (opcional):</label>
+                    <input type="text" id="app-caminho" placeholder="C:\\Program Files\\...">
+                    <small>Se deixar em branco, tenta localizar automaticamente.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="app-processo">Nome do Processo (opcional):</label>
+                    <input type="text" id="app-processo" placeholder="spotify.exe">
+                    <small>Se deixar em branco, usa o nome do executavel.</small>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="submit" class="btn-submit">Adicionar</button>
+                    <button type="button" class="btn-cancel" onclick="fecharModalAdicionar()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
