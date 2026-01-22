@@ -1,6 +1,6 @@
 """
-Gerenciador de Aplicativos - Versão 2
-Local com segurança contra injeção de comando
+Web App Launcher (Python)
+Gerenciador de Aplicativos - Local com segurança contra injeção de comando
 """
 
 import json

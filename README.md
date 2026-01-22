@@ -1,8 +1,8 @@
-# Launcher V2
+# Web App Launcher (Python)
 
 ## O que é?
 
-Um gerenciador de aplicativos. Basicamente, você cria uma lista de programas que quer abrir, e o Launcher V2 deixa você:
+Um gerenciador de aplicativos. Basicamente, você cria uma lista de programas que quer abrir, e o Web App Launcher deixa você:
 
 - Abrir programas de forma fácil
 - Fechar programas que estão rodando

@@ -8,9 +8,8 @@ from app import abrir_app, fechar_app, listar_apps, get_app_por_numero, adiciona
 
 def exibir_menu_principal():
     """Exibe o menu principal"""
-    print("
-" + "="*50)
-    print("     LAUNCHER V2 - GERENCIADOR DE APPS")
+    print("\n" + "="*50)
+    print("     WEB APP LAUNCHER - GERENCIADOR DE APPS")
     print("="*50)
     print("  1. Abrir app")
     print("  2. Fechar app")
