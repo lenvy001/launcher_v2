@@ -5,12 +5,6 @@
             "nome": "brave",
             "caminho": "C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
             "processo": "brave.exe"
-        },
-        {
-            "id": "roblox",
-            "nome": "roblox",
-            "caminho": "C:\\Users\\00\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Roblox",
-            "processo": "Roblox"
         }
     ]
 }
